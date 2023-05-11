@@ -33,7 +33,7 @@ user_api_key = utils.load_api_key()
 os.environ["OPENAI_API_KEY"] = user_api_key
 
 
-if not user_api_key:
+if user_api_key:
     layout.show_api_key_missing()
 
 else:
